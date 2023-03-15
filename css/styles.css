@@ -1,5 +1,229 @@
-body{
-    font-family: 'Roboto', sans-serif;
-
+:root {
+  --main-color: #2c2c2c;
+  --accent-color: #bbf330;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  background-color: #f5f5f5;
+}
+
+/* ======компоненти======= */
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1,20;
+}
+/* =======компоненти/======= */
+/* ====шапка===== */
+.header {
+}
+.header-link {
+}
+.header-nav {
+}
+.header-menu {
+}
+.header-item {
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1.14;
+}
+.hader-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1,5;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.hader-button:hover,
+.hader-button:focus {
+  background: #ffe450;
+}
+
+/* ===============HERO================= */
+.hero {
+}
+
+.hero-text {
+  font-size: 16px;
+  line-height: 1,50;
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1,5;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #ffe450;
+}
+
+
+/* ===============ABOUT=============== */
+.about {
+}
+.about-text {
+  font-size: 16px;
+  line-height: 1,5;
+}
+.about-list {
+}
+.about-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1,40;
+}
+.about-list-text {
+  font-size: 14px;
+  line-height: 1,5;
+}
+
+.about-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1,5;
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  cursor: pointer;
+}
+
+.about-button:hover,
+.about-button:focus {
+  background: #bbf330;
+}
+
+/* ================PORTFOLIO================= */
+.portfolio {
+}
+.portfolio-title {
+  text-align: center;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1,19;
+  text-align: center;
+}
+.portfolio-list {
+}
+
+
+/* =================REWIEWS================== */
+.reviews {
+}
+.reviews-text {
+  font-size: 16px;
+  line-height: 1,19;
+}
+.reviews-list {
+}
+.reviews-item {
+}
+.reviws-item-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+}
+.reviews-img-tittle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.50;
+}
+.reviews-img-text {
+  font-size: 14px;
+  line-height: 1.50;
+}
+
+
+/* ======================SUBSCRIBING============= */
+.subscribing-box {
+}
+.subscribing-text {
+  font-size: 16px;
+  line-height: 1.50;
+}
+.subscribing-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1,5;
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  cursor: pointer;
+}
+.subscribing-button:hover,
+.subscribing-button:focus {
+  border: 2px solid #ffe450;
+}
+
+/* ==============FOOTER=============== */
+
+.footer {
+}
+.footer-nav {
+}
+.footer-menu {
+}
+.footer-menu-item {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.footer-menu-link {
+  color: #000000;
+}
+.footer-subscribing-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1,50;
+}
+.footer-subscribing-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-subscribing-button:hover,
+.footer-subscribing-button:focus {
+  background: #ffe450;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 1.17;
+}
+.footer-list {
+}
+.footer-policy {
+  font-size: 12px;
+  line-height: 11.17;
+  text-decoration-line: underline;
+
+  color: #7eb101;
+}
