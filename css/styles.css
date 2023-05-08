@@ -233,6 +233,7 @@ line-height: 1.5;
     margin-bottom: 37px;
   }
   .hero-slider {
+    
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -240,8 +241,9 @@ line-height: 1.5;
     width: 336px;
     height: 320px;
     background-image: url(../img/Ellipse-tab.png);
-    background-size: 100%;
-   
+    
+    background-size: contain;
+   background-repeat: no-repeat;
    
     justify-content: center;
     align-items: center;
@@ -254,12 +256,13 @@ line-height: 1.5;
   }
   .hero-slider-photo {
     position: relative;
-    left: -2px; 
-    top: 8px;
+     left: -10px; 
+     
     border-radius: 50%;
     width: 292px;
     height: 292px;
     margin: auto;
+    object-position: center ;
     
   }
    
@@ -296,7 +299,7 @@ line-height: 1.5;
   
   .slick-next {
     display: block;
-  right: -10px;
+  right: 8px;
   
   width: 28px;
   height: 34px;
@@ -405,7 +408,7 @@ background-size: 16px 29px;
     background-image: url(../img/offering-mob320.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
+    background-position: center 50%;
    min-width: 320px;
   }
 
@@ -498,4 +501,11 @@ border-radius: 30px;
     background-color:var(--accent-color) ;
     border-color:transparent;
 
+}
+
+@media screen and (min-width: 768px) {
+  .offering-container {
+    margin-top: -20px;
+    background-image: url(../img/offering-tab.png);
+  }
 }
