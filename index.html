@@ -13,15 +13,22 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <!-- Header Ira-->
+
   <header class="header">
     <div class="container header-container">
       <a class="logo" href=""><img src="./img/Vector.svg" alt="logo" width="66" height="52" /></a>
+
+      <button type="button" class="menu-mobile-open js-open-menu">
+        <svg class="menu-mobile-open-icon" width="28px" height="28px">
+          <use href="./img/gg-menu.svg#icon-gg_menu"></use>
+        </svg>
+      </button>
+
       <nav class="header-navigation">
         <ul class="header-list list">
           <li class="header-item header-flex">
@@ -42,9 +49,10 @@
         </ul>
       </nav>
       <button class="header-button" type="button">Order Now</button>
+
     </div>
   </header>
-  <!-- Hero Oksana-->
+
 
   <section class="hero-section">
     <div class="hero-container container">
@@ -61,7 +69,7 @@
         <button class="hero-button">Order Now</button>
       </div>
 
-         <!-- <div class="hero-photos-wrap">
+      <!-- <div class="hero-photos-wrap">
          <img class="hero-photos" src="./img/Foto-1.jpg" alt="Food" width="528" height="528" />
       </div>  -->
 
@@ -69,28 +77,26 @@
         <div class="hero-slider-item">
           <picture>
 
-            <source srcset="./img/Foto-1.jpg 1x, ./img/hero-photo1@2x.jpg 2x" media="(min-width: 1280px)" >
+            <source srcset="./img/Foto-1.jpg 1x, ./img/hero-photo1@2x.jpg 2x" media="(min-width: 1280px)">
             <source srcset="./img/hero-photo1-tab.jpg 1x./img/hero-photo1-tab@2x.jpg 2x" media="(min-width: 768px)">
 
-            <img class="hero-slider-photo" src="./img/Foto-1.jpg" alt="Food" width="528" height="528"> 
+            <img class="hero-slider-photo" src="./img/Foto-1.jpg" alt="Food" width="528" height="528">
           </picture>
-          
+
         </div>
         <div class="hero-slider-item">
           <picture>
             <source srcset="./img/hero-photo2.jpg 1x, ./img/hero-photo2@2x.jpg 2x" media="(min-width: 1280px)">
             <source srcset=" ./img/hero-photo2-tab.jpg 1x, ./img/hero-photo2-tab@2x.jpg 2x" media="(min-width: 768px)">
 
-            <img class="hero-slider-photo" src="./img/hero-photo2.jpg" alt="Food" width="528"
-            height="528">
+            <img class="hero-slider-photo" src="./img/hero-photo2.jpg" alt="Food" width="528" height="528">
           </picture>
         </div>
         <div class="hero-slider-item">
           <picture>
             <source srcset="./img/hero-photo3.jpg 1x, ./img/hero-photo3@2x.jpg 2x" media="(min-width: 1280px)">
             <source srcset="./img/hero-photo3-tab.jpg 1x, ./img/hero-photo3-tab@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="hero-slider-photo" src="./img/hero-photo3.jpg" alt="Food" width="528"
-            height="528">
+            <img class="hero-slider-photo" src="./img/hero-photo3.jpg" alt="Food" width="528" height="528">
           </picture>
         </div>
 
@@ -98,55 +104,56 @@
     </div>
   </section>
 
-  <!-- Offerings Ruslan Zhuk-->
   <section class="offerings-section">
-    <div class="rectangle-in-container container">
-      <div class="offerings-bl">
-        <img src="./img/aple.jpg" alt="photo green apple" width="550" height="604" class="img-apple" />
-        <div class="special-offerings">
-          <h2 class="h2-title special-offerings-title">
-            What&rsquo;s Special About Our<br />
-            Offerings
+    <div class="offering-container container">
+      <div class="offerings-photo-wrap">
+        <img class="offerings-photo" src="./img/Apple.png" alt="photo green apple"  />
+      </div>
+        <div class="offerings-special">
+          <h2 class="offerings-title">
+            What&rsquo;s Special About Our Offerings
           </h2>
-          <p class="special-offerings-text">
+          <p class="offerings-text offerings-pert1">
             With our platform, you can browse through a diverse selection of
             cuisines and local restaurants, and choose from a variety of
             dishes that cater to your specific taste buds.
           </p>
-          <ul class="offerings-list list">
-            <li class="offerings-item">
-              <!-- <svg class="">
-                  <use href=""></use>
-                </svg> -->
-              <h3 class="h3-title delivery-title">Fasest Delivery</h3>
-              <p class="paragraph-of-text delivery-text">
+       
+          <div class="offerings-icon-wrap"><svg class="offerings-icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-antenna">
+
+            </use>
+          </svg> </div>
+              <h3 class="offerings-subtitle">Fasest Delivery</h3>
+              <p class="offerings-text offerings-pert2 ">
                 Our advanced logistics system and dedicated delivery partners
                 ensure that your meals are delivered to you within 30-minutes.
               </p>
-            </li>
-            <li class="offerings-item">
-              <!-- <svg class="">
-                  <use href=""></use>
-                </svg> -->
-              <h3 class="h3-title easy-orde-title">Easy To Orde</h3>
-              <p class="paragraph-of-text easy-orde-text">
+            
+            
+              <div class="offerings-icon-wrap"><svg class="offering-icon" width="32" height="32">
+                <use href="./images/sprite.svg#icon-antenna">
+  
+                </use>
+              </svg> </div>
+              <h3 class="offerings-subtitle">Easy To Orde</h3>
+              <p class="offerings-text offerings-pert3">
                 You can browse through a wide variety of cuisines and
                 restaurants, select your favorite meals, and place your order
                 in just a few clicks.
               </p>
-            </li>
-          </ul>
+          
 
-          <button type="button" class="button-offer">Order Now</button>
+          <button type="button" class="offerings-button">Order Now</button>
         </div>
-      </div>
+      
     </div>
     </div>
     </div>
   </section>
 
-  <!-- Favorites Ruslan-->
-  <section class="section section--favorites">
+  
+  <!-- <section class="section section--favorites">
     <div class="container">
       <h2 class="h2-title">Some of Our Favorites</h2>
       <p class="subtitle">Looking for something delicious?</p>
@@ -189,9 +196,9 @@
         </li>
       </ul>
     </div>
-  </section>
-  <!-- Customers Say Bogdan-->
-  <section class="section section-customers">
+  </section> -->
+  
+  <!-- <section class="section section-customers">
     <div class="container customers-say">
       <div class="customer-wrap">
         <div class="title-block">
@@ -300,11 +307,8 @@
         </ul>
       </div>
     </div>
-  </section>
-  <!-- ss -->
-  <!-- Subscribe Sasha Bolych-->
-  <!-- Footer Nazar-->
-  <!-- Modal window Vlad -->
+  </section> -->
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
