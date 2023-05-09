@@ -197,6 +197,7 @@ padding: 28px 0px;
     max-width: 768px;
     padding-top: 60px;
     padding-bottom: 73px;
+    
   }
 
  
@@ -403,6 +404,7 @@ background-size: 16px 29px;
 /* =========OFFERING=============== */
 
   .offering-container {
+    
     padding-top: 41px;
     padding-bottom: 72px;
     background-image: url(../img/offering-mob320.png);
@@ -505,7 +507,7 @@ border-radius: 30px;
 
 @media screen and (min-width: 768px) {
   .offering-container {
-    margin-top: -20px;
+    
     background-image: url(../img/offering-tab.png);
   }
 }
