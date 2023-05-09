@@ -193,7 +193,7 @@ padding: 28px 0px;
 @media screen and (min-width: 768px) {
   .hero-container {
     position: relative;
-
+z-index: 2;
     max-width: 768px;
     padding-top: 60px;
     padding-bottom: 73px;
@@ -236,8 +236,8 @@ line-height: 1.5;
   .hero-slider {
     
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 18px;
+    bottom: 0px;
     display: flex;
     width: 336px;
     height: 320px;
@@ -403,15 +403,18 @@ background-size: 16px 29px;
 
 /* =========OFFERING=============== */
 
+
   .offering-container {
     
     padding-top: 41px;
     padding-bottom: 72px;
+  
     background-image: url(../img/offering-mob320.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 50%;
    min-width: 320px;
+
   }
 
 .offerings-photo-wrap {
@@ -420,7 +423,7 @@ background-size: 16px 29px;
   
 
   
- width: 280px;px;
+ width: 280px;
 height:309px ;
 margin-left: auto;
 margin-right: auto;
@@ -472,11 +475,11 @@ line-height: 1.17;
 color: var(--main-color);
 margin-bottom: 16px;
 }
-.offerings-pert2 {
+.offerings-part2 {
   margin-bottom: 24px;
 }
 
-.offerings-pert3 {
+.offerings-part3 {
   margin-bottom: 28px;
 }
 
@@ -505,9 +508,97 @@ border-radius: 30px;
 
 }
 
+.offering-link {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .offering-container {
-    
+    padding-top: 150px;
+    padding-bottom: 88px;
+  margin-top: -10%;
     background-image: url(../img/offering-tab.png);
+    background-position: 0% center;
+   min-width: 768px;
+
   }
+
+  .offerings-photo-wrap {
+    width: 100%;
+    height: 394px;
+    margin-bottom: 60px;
+  }
+.offering-part1-wrap {
+  width: 526px;
 }
+
+.offerings-title {
+  font-size: 42px;
+line-height: 1.17;
+}
+.offerings-text  {
+  font-size: 16px;
+line-height: 1.5;
+}
+
+.offerings-subtitle{
+  font-size: 18px;
+line-height: 21px;
+}
+
+.offerings-part3, .offerings-part2 {
+  font-size: 14px;
+line-height: 1.43;
+
+}
+
+.offerings-content-wrap {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+.offering-part2-wrap{
+  width: 288px;
+}
+
+.offering-part3-wrap {
+  width: 252px;
+}
+
+
+}
+
+
+@media screen  and (min-width: 768px) and (max-width: 1279px) {
+
+  .offiring-button-block {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .offering-link {
+    display: block;
+    text-decoration: none;
+    font-size: 13.6667px;
+line-height: 1.5;
+
+color: #000000;
+scale: 1;
+transition: scale  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+  .offering-link:hover, .offering-link:focus {
+    scale: 1.1;
+  }
+
+  
+  }
+
+  
+
+
+
+

@@ -107,9 +107,17 @@
   <section class="offerings-section">
     <div class="offering-container container">
       <div class="offerings-photo-wrap">
-        <img class="offerings-photo" src="./img/Apple.png" alt="photo green apple"  />
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/apple-mob.png 1x, ./img/apple-mob.png.png 2x">
+
+          <source media="(max-width: 1279px)" srcset="./img/apple-tab.png 1x, ./img/apple-tab-2x.png 2x ">
+
+          <img class="offerings-photo" src="./img/Apple.png" alt="photo green apple" />
+        </picture>
+
       </div>
-        <div class="offerings-special">
+      <div class="offerings-special">
+        <div class="offering-part1-wrap">
           <h2 class="offerings-title">
             What&rsquo;s Special About Our Offerings
           </h2>
@@ -118,41 +126,52 @@
             cuisines and local restaurants, and choose from a variety of
             dishes that cater to your specific taste buds.
           </p>
-       
-          <div class="offerings-icon-wrap"><svg class="offerings-icon" width="32" height="32">
-            <use href="./images/sprite.svg#icon-antenna">
-
-            </use>
-          </svg> </div>
-              <h3 class="offerings-subtitle">Fasest Delivery</h3>
-              <p class="offerings-text offerings-pert2 ">
-                Our advanced logistics system and dedicated delivery partners
-                ensure that your meals are delivered to you within 30-minutes.
-              </p>
-            
-            
-              <div class="offerings-icon-wrap"><svg class="offering-icon" width="32" height="32">
-                <use href="./images/sprite.svg#icon-antenna">
-  
-                </use>
-              </svg> </div>
-              <h3 class="offerings-subtitle">Easy To Orde</h3>
-              <p class="offerings-text offerings-pert3">
-                You can browse through a wide variety of cuisines and
-                restaurants, select your favorite meals, and place your order
-                in just a few clicks.
-              </p>
-          
-
-          <button type="button" class="offerings-button">Order Now</button>
         </div>
-      
+
+        <div class="offerings-content-wrap">
+         <div class="offering-part2-wrap">
+           <div class="offerings-icon-wrap"><svg class="offerings-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-antenna">
+
+          </use>
+        </svg> </div>
+      <h3 class="offerings-subtitle">Fasest Delivery</h3>
+      <p class="offerings-text offerings-part2 ">
+        Our advanced logistics system and dedicated delivery partners
+        ensure that your meals are delivered to you within 30-minutes.
+      </p></div>
+
+<div class="offering-part3-wrap">
+  
+  <div class="offerings-icon-wrap"><svg class="offering-icon" width="32" height="32">
+    <use href="./images/sprite.svg#icon-antenna">
+
+    </use>
+  </svg> </div>
+<h3 class="offerings-subtitle">Easy To Orde</h3>
+<p class="offerings-text offerings-part3">
+  You can browse through a wide variety of cuisines and
+  restaurants, select your favorite meals, and place your order
+  in just a few clicks.
+</p>
+</div>
+
+        </div>
+
+        <div class="offiring-button-block">
+          <button type="button" class="offerings-button">Order Now</button>
+
+          <a class="offering-link" href="">Read More  &gt; </a>
+        
+        </div>
+      </div>
+
     </div>
     </div>
     </div>
   </section>
 
-  
+
   <!-- <section class="section section--favorites">
     <div class="container">
       <h2 class="h2-title">Some of Our Favorites</h2>
@@ -197,7 +216,7 @@
       </ul>
     </div>
   </section> -->
-  
+
   <!-- <section class="section section-customers">
     <div class="container customers-say">
       <div class="customer-wrap">
