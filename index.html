@@ -23,7 +23,7 @@
     <div class="container header-container">
       <a class="logo" href=""><img src="./img/Vector.svg" alt="logo" width="66" height="52" /></a>
 
-      <button type="button" class="menu-mobile-open js-open-menu">
+      <button type="button" class="menu-mobile-open" >
         <svg class="menu-mobile-open-icon" width="28px" height="28px">
           <use href="./img/gg-menu.svg#icon-gg_menu"></use>
         </svg>
@@ -48,7 +48,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header-button" type="button">Order Now</button>
+      <button class="header-button" type="submit" data-modal-open>Order Now</button>
 
     </div>
   </header>
@@ -66,7 +66,7 @@
             enjoy a hassle-free and delicious meal from the comfort of your own
             home.
           </p>
-          <button class="hero-button">Order Now</button>
+          <button class="hero-button" type="submit" data-modal-open>Order Now</button>
         </div>
 
         <!-- <div class="hero-photos-wrap">
@@ -163,7 +163,7 @@
           </div>
 
           <div class="offiring-button-block">
-            <button type="button" class="offerings-button">Order Now</button>
+            <button type="button" class="offerings-button" data-modal-open>Order Now</button>
 
             <a class="offering-link" href="">Read More &gt; </a>
 
@@ -413,6 +413,60 @@
 
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal"><button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="12" height="12">
+          <use href="./img/sprite-left-right.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-container">
+        <p class="form-title">Order Form</p>
+        <form action="" class="form-modal">
+          <label class="modal-input-wrap">
+            <p class="form-text">Name</p>
+            <input class="modal-input" type="text" 
+            name="user-name"  
+            placeholder="Your name" 
+            pattern="[a-zA-Z]+"
+            required
+              >
+              <span class="modal-input-error">
+                &#9888; The name must be between 3 and 25 characters
+              </span>
+          </label>
+          <label >
+            <p class="form-text">Phone number</p>
+            <input type="tel" 
+            name="user-phone" 
+           class="modal-input"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _" 
+              required 
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              <span class="modal-input-error">
+                &#9888;  This phone must be in the format  099 000 00 00
+              </span>
+          </label>
+          <label >
+            <p class="form-text">E-mail</p>
+            <input type="email" name="user-email"  class="modal-input" placeholder="example@gmail.com"
+              required>
+              <span class="modal-input-error">
+                &#9888; Not a valid email address &#40;example&#64;email.com&#41;
+              </span>
+          </label>
+          
+            <div class="modal-button-wrap"><button type="submit" class="button-send">Send
+            </button>
+            <!-- <span>
+              <p class="modal-button-error">All fields are required</p> -->
+            </span></div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
